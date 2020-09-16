@@ -427,7 +427,9 @@
               placeholder="E-mail"
             />
             <label class="subscription-label" for="email"></label>
-            <button class="primary button" type="submit">Подписаться</button>
+            <button class="primary button" type="submit"> Подписаться <svg class="icon-send" width="24" height="24">
+              <use href="./img/sprite-2.svg#icon-send"></use>
+            </svg></button>
           </form>
         </div>
       </div>
@@ -435,24 +437,44 @@
 
     <div class="backdrop is-hidden" data-backdrop>
       <div class="modal">
-        <button class="close" data-close-modal></button>
+        <button class="close-button" data-close-modal>
+          <svg class="icon-close">
+            <use href="./img/sprite-2.svg#icon-close"></use>
+          </svg>
+        </button>
         <form class="form">
           <b class="title">Оставьте свои данные, мы вам перезвоним</b>
           <div class="fieldset" role="group">
+
             <label class="label"> Имя</label>
+            <div class="form-field">
             <input class="input" type="text" />
+            <svg class="form-icon icon-vector">
+              <use href="./img/sprite-2.svg#icon-user"></use>
+            </svg></div>
+           
             <label class="label"> Телефон</label>
-            <input class="input" type="tel" />
+            <div class="form-field"> 
+            <input class="input" type="tel" /><svg class="form-icon icon-phone-black">
+              <use href="./img/sprite-2.svg#icon-phone-black"></use>
+            </svg></div>
+           
             <label class="label">Почта</label>
-            <input class="input" type="email" />
+            <div class="form-field" >
+            <input class="input" type="email" /><svg class="form-icon icon-phone-black">
+              <use href="./img/sprite-2.svg#icon-send"></use>
+            </svg></div>
+
+            
             <label class="label">Комментарий </label>
             <textarea
-              class="textarea"
+              class="input textarea"
               name=""
               id=""
               cols="30"
               rows="10"
               placeholder="Введите текст"
+              
             ></textarea>
           </div>
           <label class="checkbox"
