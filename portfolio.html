@@ -51,7 +51,7 @@
     </header>
     <main>
       <section class="section portfolio">
-        <h1 class="hiden">Портфолио</h1>
+        <h1 class="visually-hidden">Портфолио</h1>
         <!-- selector -->
         <div class="conteiner">
           <ul class="selector list flex">
@@ -297,7 +297,7 @@
           </ul>
         </address>
         <div class="join">
-          <b class="join-text">присоединяйтесь</b>
+          <b class="appeal join-text">присоединяйтесь</b>
           <ul class="footer-social list flex">
             <li class="join-item">
               <a
@@ -333,6 +333,25 @@
             </li>
           </ul>
         </div>
+
+        <form class="subscription-form">
+          <div class="form-field">
+            <label class="appeal" for="email">Подпишитесь на рассылку </label>
+            <input
+              class="subscription-input"
+              type="email"
+              id="email"
+              placeholder="E-mail"
+            />
+          </div>
+
+          <button class="primary button" type="submit">
+            Подписаться
+            <svg class="icon-send" width="24" height="24">
+              <use href="./img/sprite-2.svg#icon-send"></use>
+            </svg>
+          </button>
+        </form>
       </div>
     </footer>
   </body>
