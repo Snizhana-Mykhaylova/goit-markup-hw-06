@@ -60,13 +60,13 @@ img {
 
 /* временно скрывает заголовок */
 .visually-hidden {
-	position: absolute !important;
+	position: absolute;
 	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
 	clip: rect(1px, 1px, 1px, 1px);
-	padding: 0 !important;
-	border: 0 !important;
-	height: 1px !important;
-	width: 1px !important;
+	padding: 0;
+	border: 0;
+	height: 1px;
+	width: 1px;
 	overflow: hidden;
 }
 
@@ -405,13 +405,13 @@ body {
 	position: absolute;
 
 	bottom: 0;
+
 	left: 50%;
+	bottom: 27px;
 	transform: translateX(-50%);
 	width: 100%;
 
 	margin-bottom: 0;
-	padding-top: 27px;
-	padding-bottom: 27px;
 
 	font-size: 14px;
 	text-transform: uppercase;
@@ -595,6 +595,10 @@ footer .accent {
 }
 
 /* Контакты */
+.footer-contact .item:not(:last-child) {
+	margin-bottom: 9px;
+}
+
 .footer-contact .link {
 	color: rgba(255, 255, 255, 0.6);
 	font-style: normal;
@@ -701,6 +705,11 @@ footer .accent {
 
 	margin-right: 12px;
 	padding: 15px;
+
+	color: rgba(255, 255, 255, 0.6);
+	font-size: 16px;
+	line-height: 1.25;
+	letter-spacing: 0.03em;
 
 	background-color: inherit;
 	border: 1px solid rgba(255, 255, 255, 0.3);
@@ -958,16 +967,15 @@ footer .accent {
 	align-items: center;
 	line-height: 1.71;
 }
-.checkbox-label::before {
-	content: "";
-	display: block;
+.checkbox-check {
 	width: 16px;
 	height: 15px;
 	margin-right: 8px;
 
 	background-image: url(../img/checkbox.svg);
 }
-.input-checkbox:checked + .checkbox-label::before {
+
+.input-checkbox:checked + .checkbox-check {
 	background-image: url(../img/icon-check.svg);
 }
 
